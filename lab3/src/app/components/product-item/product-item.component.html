@@ -1,0 +1,13 @@
+<div class="card">
+      <img [src]="myProduct.imgSrc" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title text-center">{{myProduct.title}}</h5>
+        <p class="card-text">Quantity: {{myProduct.quantity==0||myProduct.quantity==1?(myProduct.quantity==0?"No Item Avilable":"Only one"):myProduct.quantity}}</p>
+        <p class="card-text">Price: {{myProduct.price}}</p>
+        <button class="btn" [ngClass]="{
+          'btn-danger':myProduct.quantity==0,
+          'btn-warning':myProduct.quantity==1,
+          'btn-primary':myProduct.quantity!=1&&myProduct.quantity!=0
+        }">{{myProduct.quantity==0||myProduct.quantity==1?"Buy now":"Add to Card"}}</button>
+      </div>
+</div>    

@@ -1,0 +1,93 @@
+/* .container{
+      background-color: rgb(0 66 66);
+      height: 1000px;
+  }
+  .middle{
+      width: 80%;
+      margin: auto;
+      
+  }
+  
+  .myinputs{
+      width: 100%;
+      margin: auto;
+      text-align: center;
+      padding-top: 40px;
+  }
+  label{
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: large;
+      color: rgb(227, 168, 7);
+  }
+  input{
+      width: 200px;
+      height: 30px;
+      border-radius: 5px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 17px;
+      border: none;
+      margin-left: 10px;
+  }
+  button { 
+      width: 110px;
+      height: 35px;
+      font-family: Arial, Helvetica, sans-serif;
+      border: 1px solid rgb(227, 168, 7);
+      border-radius: 5px;
+      margin-left: 15px;
+      color: rgb(0 66 66);
+      font-size: large;
+  }
+  
+  table{
+      width:130%;
+      margin: auto;
+      text-align: center;
+      margin-top: 50px;
+      font-family: Arial, Helvetica, sans-serif;
+  }
+  th{
+      color: rgb(227, 168, 7);
+      font-size: larger;
+  }
+  td{
+      color: white;   
+      padding: 5px 0;
+  }
+  tbody button {
+      color: brown;
+      border: 1px solid red;
+      width: 100px;
+      height: 30px;
+      font-size: 17px;
+  } */
+  /* ------------------------------------ */
+  /* Validation */
+  /* .validation{
+      text-align: center;
+      margin: auto;
+  }
+  span{
+      color:white;
+      font-family: Arial, Helvetica, sans-serif;
+      margin-left: 30px;
+      /* visibility: hidden;   */
+  /* }
+  p:nth-child(2){
+      padding-left: 23%;
+  }
+   */ 
+  input{
+    width: 300px;
+    margin-top: 30px;
+    margin: auto;
+  }
+  button{
+    margin: auto;
+    text-align: center;
+  }
+  p{
+    text-align: center;
+    color: rgb(185, 65, 65);
+  }
+  

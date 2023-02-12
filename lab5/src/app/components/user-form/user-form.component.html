@@ -1,0 +1,19 @@
+<div class="container">
+      <form #usersignup="ngForm" (ngSubmit)="Save()" >
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Your Name</label>
+              <input #e="ngModel" type="text" required class="form-control" id="exampleInputEmail1" name="name" [(ngModel)]="name" aria-describedby="emailHelp">
+              <div *ngIf="e.invalid && e.touched" class="form-text text-danger">Your Name not Valid.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input #p="ngModel" type="password" class="form-control" id="exampleInputPassword1" required minlength="3" name="password" [(ngModel)]="password">
+               <div *ngIf="p.invalid && p.touched" class="form-text text-danger"> Your Password not Valid </div>
+              <!-- <div *ngIf="p.errors?.required" class="form-text text-danger"> Your Password not Valid </div>
+              <div *ngIf="p.errors?.minlength" class="form-text text-danger"> Your Password not Valid </div> -->
+               
+             </div>
+            <button type="submit" class="btn btn-primary" [disabled]="usersignup.invalid">{{userid?"Edit":"Save"}}</button>
+      </form>
+      <!-- <p-password weakLabel="Very Weak" [(ngModel)]="value1"></p-password> -->
+</div>

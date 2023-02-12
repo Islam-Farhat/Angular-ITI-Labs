@@ -1,0 +1,31 @@
+<div class="bg-dark text-light text-center p-5">
+      <div class="container">
+            <h2>To Do List</h2>
+            <div class="row">
+                  <div class="col-sm-8 mt-4">
+                  <input type="text" class="form-control" value="" placeholder="Enter your Course" [(ngModel)]="courseName"/>
+
+                  </div>
+                  <div class="col-sm-4 mt-4">
+                        <button class="btn btn-warning d-block w-100" (click)="addCousre()">Add Course</button>
+                  </div>
+            </div>
+            <table class="table table-striped text-light">
+                  <thead>
+                      <tr>
+                          <th>Course Name</th>
+                          <th>Action</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                     <tr *ngFor="let student of courseNames; let i=index;">
+                      <td class="text-light">{{student}}</td>
+                     <td><button class="btn btn-danger" (click)="removeCourse(i)">Delete</button><td>
+                     </tr>
+                  </tbody>
+              </table>
+      </div>
+
+</div>
+
+

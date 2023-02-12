@@ -1,0 +1,38 @@
+<input [(ngModel)]="studentName" type="text" class="form-control" placeholder="Enter your Name"/>
+<p *ngIf="flag">Name is Required!</p>
+<input [(ngModel)]="studentAge" type="text" class="form-control" placeholder="Enter your Age"/>
+<p *ngIf="flagAge" >Age must be at least 10 years</p>
+<div style="margin: auto;text-align: center;">
+    <button class="btn btn-primary" (click)="addStudent()" >Add Student</button>
+</div>
+
+
+<div class="container">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+           <tr *ngFor="let student of studentsNames;let i=index;">
+            <td>{{student}}</td>
+           <td>{{studentsAges[i]}}</td>
+           <td><button class="btn btn-danger" (click)="removeStudent(i)">Delete</button><td>
+           </tr>
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,26 @@
+<div class="container">
+      <table class="table"><!--table-striped-->
+
+            <thead>
+                  <tr>
+                        <th>ID</th>
+                       <th>Name</th>
+                       <th>Password</th>
+                       <th>Action</th>
+                  </tr>
+            </thead>
+            <tbody>
+                  <tr *ngFor="let user of users">
+                        <td>{{user.id}}</td>
+                        <td>{{user.name}}</td>
+                        <td>{{user.password}}</td>
+                        <td>
+                              <a class="btn btn-info" routerLink='/user-details/{{user.id}}'>Details</a>|
+                              <button class="btn btn-danger" (click)="DeleteUser(user.id)">Delete</button>|
+                              <a class="btn btn-warning" routerLink='/user-from/{{user.id}}'>Update</a>
+                        </td>
+                  </tr>
+            </tbody>
+      </table>
+      
+</div>
